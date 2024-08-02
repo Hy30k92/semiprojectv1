@@ -1,14 +1,15 @@
 /*매뉴*/
 #wrap{width: 1080px; margin:auto}
 nav { overflow: auto; white-space: nowrap}
-#menu{text-align: center}
-#menu li {list-style: none; display: inline; margin-right:150px }
-#hr1 {border: 2px solid black; }
+nav{text-align: center}
+nav ul li {list-style: none; display: inline; margin-right:150px }
+hr {border: 2px solid black; }
 a:link {color: black; text-decoration: none; font-weight: bold}
 a:visited {color: mediumseagreen}
 a:active {color: red}
 main{min-height: 500px}
 
 /*footer*/
-#copy{text-align: center}
-#hr2 {border: 2px solid black;margin-top: 500px; }
+footer p{text-align: center}
+footer hr {border: 2px solid black;margin-top: 500px; }
+

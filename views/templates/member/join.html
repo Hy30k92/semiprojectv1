@@ -7,38 +7,13 @@
     <link rel="stylesheet" href="/static/css/project.css">
     <style>
         /*main*/
-
-        /* 전체 폼 스타일 */
-        #joinfrm {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* 폼을 가운데 정렬 */
-            max-width: 600px; /* 폼의 최대 너비 설정 (필요에 따라 조정) */
-            margin: 0 auto; /* 폼을 중앙에 배치 */
-            margin-top: 100px;
-        }
-        /* 각 div의 스타일 */
-        #joinfrm > div {
-            display: flex;
-            align-items: center; /* 레이블과 입력 필드를 수직으로 중앙 정렬 */
-            margin-bottom: 15px; /* 각 줄 간의 간격 설정 */
-            width: 100%; /* 각 div의 너비를 100%로 설정 */
-            max-width: 500px; /* 각 div의 최대 너비 설정 (필요에 따라 조정) */
-        }
-
-        /* 레이블 스타일 */
-        #joinfrm label {
-            width: 150px; /* 레이블의 너비 설정 */
-            margin-right: 15px; /* 레이블과 입력 필드 사이의 간격 */
-            text-align: right; /* 레이블 텍스트 오른쪽 정렬 */
-        }
-
-        #joinbtn, #rsbtn {display: inline-block;
-            margin-right: 10px; /* 버튼 간의 간격 설정 */
-            padding: 2px 12px; /* 버튼의 패딩 설정 */
-            cursor: pointer; /* 커서가 포인터로 바뀌도록 설정 */
-        }
-        #bt{margin-left: 330px}
+        form {width: 400px; margin: 100px auto;}
+        form label {display: inline-block; width: 110px;
+                    text-align: right;}
+        form div{margin: 5px 0}
+        form input{padding: 5px}
+        /*#bt{margin-left: 120px;margin-top: 10px}*/
+        #bt{margin-left: 7px ; margin-top: 3px }
 
 
     </style>
@@ -78,16 +53,10 @@
                 </div>
                 <div>
                     <label for="email">이메일</label>
-                    <input type="email" name="email" id="email" required> @
-                    <select name="emails" id="emails">
-                        <option>골라</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="kakao.com">kakao.com</option>
-                    </select>
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div id="bt">
-                    <button type="submit" id="joinbtn">입력완료</button>
+                    <label></label><button type="submit" id="joinbtn">입력완료</button>
                     <button type="reset" id="rsbtn">다시입력</button>
                 </div>
             </form>
