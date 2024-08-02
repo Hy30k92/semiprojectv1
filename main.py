@@ -21,6 +21,3 @@ async def index(req: Request):
 
 
 
-
-
-
