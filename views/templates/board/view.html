@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>세미프로잭트</title>
     <link rel="stylesheet" href="/static/css/project.css">
+    <style>
+        table{ width: 650px; margin: 0 auto;}
+        tr {height: 40px}
+        th { width: 100px }
+        tr:nth-child(4){ vertical-align: top }
+        #listbtn {margin-left:100px }
+
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -27,11 +35,11 @@
                     <td>시간은 금이라구,친구!시간은 금이라구,친구!시간은 금이라구,친구!
                     시간은 금이라구,친구!시간은 금이라구,친구!시간은 금이라구,친구!시간은 금이라구,친구!
                     시간은 금이라구,친구!시간은 금이라구,친구!시간은 금이라구,친구!시간은 금이라구,친구!</td></tr>
-                <tr><th colspan="2">
+                <tr><td colspan="2">
                     <button type="button" id="listbtn" onclick="location.href='/board/list'">리스트로</button>
                     <button type="button" id="mdfybtn" onclick="location.href='/board/modify'">수정하기</button>
                     <button type="button" id="rmvbtn">삭제하기</button>
-                </th></tr>
+                </td></tr>
 
             </table>
             <footer>
