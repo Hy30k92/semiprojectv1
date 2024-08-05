@@ -12,13 +12,13 @@
                         overflow: hidden;text-overflow: ellipsis}
         thead td {border: none ; text-align:right}
         thead td:first-child {text-align:left}
-        thead td:last-child {text-align:right;}
+        #writebtn{text-align:right; }
         select, input {padding: 5px }
         button{padding:3px 5px}
 
           .pagenation {width:550px; margin: 0 auto}
-        div ul{list-style:  none; padding: 0;}
-        div ul li{display: inline; padding:  0 15px;}
+        div > ul{list-style:  none; padding: 0;}
+        div > ul li{display: inline; padding:  0 15px;}
 
         .cpg {color: red; font-size: 20px;font-weight: bold }
 
@@ -49,15 +49,16 @@
                 </colgroup>
                 <thead>
                 <tr>
-                    <tr><td colspan="3"><select name="findtype" id="findtype">
+                    <td colspan="3"><select name="findtype" id="findtype">
                         <option value="title">제 목</option>
                         <option value="uesrid">작성자</option>
                         <option value="contents">본 문</option>
                         <option value="titcont">제목+본문</option>
                     </select>
                         <input type="text" name="search" id="search">
-                    <button type="button" id="fidbtn">검색하기</button> </td>
-                        <td><button type="button" id="writebtn" onclick="location.href='/board/write'">글쓰기</button> </td></tr>
+                        <button type="button" id="fidbtn">검색하기</button>
+                        <button type="button" id="writebtn" onclick="location.href='/board/write'">글쓰기</button></td>
+                </tr>
                     <tr><th>번호</th><th>제목</th><th>작성자</th><th>작성일</th><th>조회</th></tr>
 
                 </thead>
